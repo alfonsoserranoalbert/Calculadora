@@ -5,8 +5,8 @@ package calculadora;
 * Esta clase representa una calculadora básica.
 * Incluye métodos para sumar, restar, multiplicar y dividir.
 *
-* @author Alfonso Serrano Albert alfonso.serrano@iestorrevigia.es
-* @version 1.0
+* @author M.Angel Vera Lorenzo
+* @version 1.1
 */
 import java.util.Scanner;
 
@@ -56,18 +56,42 @@ public class Calculadora {
         scanner.close();
     }
 
+    /**
+     *
+     * @param a es el primer valor int introducido por teclado
+     * @param b es el segundo valor int introducido por teclado
+     * @return es el resultado de la suma de ambas cifras
+     */
     public static int suma(int a, int b) {
         return a + b;
     }
 
+    /**
+     *
+     * @param a es el primer valor int introducido por teclado
+     * @param b es el segundo valor int introducido por teclado
+     * @return es el resultado de la resta de ambas cifras
+     */
     public static int resta(int a, int b) {
         return a - b;
     }
 
+    /**
+     *
+     * @param a es el primer valor int introducido por teclado
+     * @param b es el segundo valor int introducido por teclado
+     * @return es el resultado de la multiplicacion de ambas cifras
+     */
     public static int multiplicar(int a, int b) {
         return a * b;
     }
 
+    /**
+     *
+     * @param a es el primer valor int introducido por teclado
+     * @param b es el segundo valor int introducido por teclado
+     * @return es el resultado de la division de ambas cifras
+     */
     public static int dividir(int a, int b) {
         if (b == 0) {
             System.out.println("Error: división por cero");
