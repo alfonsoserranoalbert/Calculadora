@@ -1,12 +1,12 @@
 
 package calculadora;
 
- /**
+/**
 * Esta clase representa una calculadora básica.
 * Incluye métodos para sumar, restar, multiplicar y dividir.
 *
-* @author Alfonso Serrano Albert alfonso.serrano@iestorrevigia.es
-* @version 1.0
+* @author Bruno Jachnik Arias
+* @version 1.1
 */
 import java.util.Scanner;
 
@@ -56,18 +56,42 @@ public class Calculadora {
         scanner.close();
     }
 
+    /**
+     * Método para sumar entre dos valores
+     * @param a Primer valor a sumar.
+     * @param b Segundo valor a sumar.
+     * @return Devuelve la suma entre los valores a y b.
+     */
     public static int suma(int a, int b) {
         return a + b;
     }
 
+    /**
+     * Método para restar entre dos valores.
+     * @param a Primer valor a restar.
+     * @param b Segundo valor a restar.
+     * @return Devuelve la resta entre los valores a y b.
+     */
     public static int resta(int a, int b) {
         return a - b;
     }
 
+    /**
+     * Método para multiplicar entre dos valores.
+     * @param a Primer valor a multiplicar.
+     * @param b Segundo valor a multiplicar.
+     * @return Devuelve la multiplicación entre los valores a y b.
+     */
     public static int multiplicar(int a, int b) {
         return a * b;
     }
 
+    /**
+     * Método para dividir entre dos valores.
+     * @param a Primer valor a dividir.
+     * @param b Segundo valor a dividir.
+     * @return Devuelve la división entre los valores a y b, si se está dividiendo entre cero, devolverá un error.
+     */
     public static int dividir(int a, int b) {
         if (b == 0) {
             System.out.println("Error: división por cero");
